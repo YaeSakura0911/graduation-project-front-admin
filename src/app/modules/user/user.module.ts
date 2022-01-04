@@ -17,19 +17,20 @@ import { UserComponent } from './user.component';
 import { UserLoginComponent } from 'src/app/components/users/user-login/user-login.component';
 
 @NgModule({
-  declarations: [
-    UserComponent,
-    UserLoginComponent
-  ],
-  imports: [
-    CommonModule,
-    UserRoutingModule,
-    ReactiveFormsModule,
-    NzButtonModule,
-    NzLayoutModule,
-    NzCheckboxModule,
-    NzFormModule,
-    NzInputModule
-  ]
+    declarations: [
+        UserComponent,
+        UserLoginComponent
+    ],
+    imports: [
+        CommonModule,
+        UserRoutingModule,
+        ReactiveFormsModule,
+        NzButtonModule,
+        NzLayoutModule,
+        NzCheckboxModule,
+        NzFormModule,
+        NzInputModule
+    ]
 })
+
 export class UserModule { }
