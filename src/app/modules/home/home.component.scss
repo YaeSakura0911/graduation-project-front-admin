@@ -11,6 +11,12 @@ nz-layout {
     nz-header {
         background: #fff;
         padding: 0;
+
+        a {
+            color: #000;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     nz-content {

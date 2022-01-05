@@ -1,0 +1,12 @@
+<nz-drawer [nzBodyStyle]="{ overflow: 'auto' }" [nzWidth]="600" [nzClosable]="false" [nzVisible]="drawerVisible"
+    nzTitle="公告详情" (nzOnClose)="closeDrawer()">
+    <ng-container *nzDrawerContent>
+        <nz-descriptions [nzColumn]="1" nzLayout="vertical" nzSize="small" nzBordered>
+            <nz-descriptions-item nzTitle="公告标题">关于发布2021-2022学年第一学期成绩的通知</nz-descriptions-item>
+            <nz-descriptions-item nzTitle="重要等级">
+                <nz-tag [nzColor]="'blue'">普通</nz-tag>
+            </nz-descriptions-item>
+            <nz-descriptions-item nzTitle="公告内容">各位同学好，现教务系统内网与外网发布2021-2022学年第一学期的通知。各位同学好，现教务系统内网与外网发布2021-2022学年第一学期的通知。各位同学好，现教务系统内网与外网发布2021-2022学年第一学期的通知。各位同学好，现教务系统内网与外网发布2021-2022学年第一学期的通知。</nz-descriptions-item>
+        </nz-descriptions>
+    </ng-container>
+</nz-drawer>

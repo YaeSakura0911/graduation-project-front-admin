@@ -5,5 +5,9 @@ nz-select {
 nz-table {
 	th,td {
 		text-align: center;
+
+		nz-tag {
+			margin: 0;
+		}
 	}
 }

@@ -9,47 +9,47 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 // 数据录入
-import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 // 数据展示
-import { NzAvatarModule } from 'ng-zorro-antd/avatar';
+import { NzDescriptionsModule } from 'ng-zorro-antd/descriptions';
 import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzTagModule } from 'ng-zorro-antd/tag';
 // 反馈
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
 import { NzMessageModule } from 'ng-zorro-antd/message';
 import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
 
-import { StudentRoutingModule } from 'src/app/routers/student-routing.module';
+import { NoticeRoutingModule } from 'src/app/routers/notice-routing.modules';
 
-import { StudentListComponent } from 'src/app/components/students/student-list/student-list.component';
-import { StudentFormComponent } from 'src/app/components/students/student-form/student-form.component';
-import { StudentDetailComponent } from 'src/app/components/students/student-detail/student-detail.component';
+import { NoticeListComponent } from 'src/app/components/notices/notice-list/notice-list.component';
+import { NoticeFormComponent } from 'src/app/components/notices/notice-form/notice-form.component';
+import { NoticeDetailComponent } from 'src/app/components/notices/notice-detail/notice-detail.component';
 
 @NgModule({
     declarations: [
-        StudentListComponent,
-        StudentFormComponent,
-        StudentDetailComponent
+        NoticeListComponent,
+        NoticeFormComponent,
+        NoticeDetailComponent
     ],
     imports: [
         CommonModule,
-        StudentRoutingModule,
+        NoticeRoutingModule,
         NzButtonModule,
         NzIconModule,
         NzTypographyModule,
         NzDividerModule,
         NzGridModule,
-        NzDatePickerModule,
-        NzAvatarModule,
         NzFormModule,
         NzInputModule,
         NzSelectModule,
+        NzDescriptionsModule,
         NzTableModule,
+        NzTagModule,
         NzDrawerModule,
         NzMessageModule,
         NzPopconfirmModule
     ]
 })
-export class StudentModule { }
+export class NoticeModule { }

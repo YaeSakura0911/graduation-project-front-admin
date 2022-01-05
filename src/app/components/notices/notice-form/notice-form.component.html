@@ -1,0 +1,41 @@
+<nz-drawer [nzBodyStyle]="{ overflow: 'auto' }" [nzMaskClosable]="false" [nzWidth]="552" [nzVisible]="drawerVisible"
+    [nzTitle]="drawerTitle" [nzFooter]="footerTpl" (nzOnClose)="closeDrawer()">
+
+    <form nz-form *nzDrawerContent>
+        <nz-form-item>
+            <nz-form-label>公告标题</nz-form-label>
+            <nz-form-control>
+                <input nz-input />
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label>重要等级</nz-form-label>
+            <nz-form-control>
+                <nz-select>
+                    <nz-option nzCustomContent nzValue="0" nzLabel="紧急">
+                        <p nz-typography style="color: #cf1322; margin: 0;">紧急</p>
+                    </nz-option>
+                    <nz-option nzCustomContent nzValue="2" nzLabel="重要">
+                        <p nz-typography style="color:#d46b08; margin: 0;">重要</p>
+                    </nz-option>
+                    <nz-option nzCustomContent nzValue="3" nzLabel="普通">
+                        <p nz-typography style="color: #096dd9; margin: 0;">普通</p>
+                    </nz-option>
+                </nz-select>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label>公告内容</nz-form-label>
+            <nz-form-control>
+                <textarea nz-input [nzAutosize]="{ minRows: 4, maxRows: 4 }"></textarea>
+            </nz-form-control>
+        </nz-form-item>
+    </form>
+
+    <ng-template #footerTpl>
+        <div style="float: right">
+            <button nz-button style="margin-right: 8px;" (click)="closeDrawer()">取消</button>
+            <button nz-button nzType="primary" (click)="closeDrawer()">保存</button>
+        </div>
+    </ng-template>
+</nz-drawer>

@@ -11,6 +11,7 @@ const routes: Routes = [
             { path: 'direction', loadChildren: () => import('../modules/direction/direction.module').then(m => m.DirectionModule) },
             { path: 'teacher', loadChildren: () => import('../modules/teacher/teacher.module').then(m => m.TeacherModule) },
             { path: 'student', loadChildren: () => import('../modules/student/student.module').then(m => m.StudentModule) },
+            { path: 'notice', loadChildren: () => import('../modules/notice/notice.module').then(m => m.NoticeModule) },
             { path: '', redirectTo: '/direction', pathMatch: 'full' }
         ]
     }
